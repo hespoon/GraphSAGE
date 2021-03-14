@@ -4,7 +4,7 @@ import graphsage.models as models
 import graphsage.layers as layers
 from graphsage.aggregators import MeanAggregator, MaxPoolingAggregator, MeanPoolingAggregator, SeqAggregator, GCNAggregator
 
-flags = tf.app.flags
+flags = tf.compat.v1.flags
 FLAGS = flags.FLAGS
 
 class SupervisedGraphsage(models.SampleAndAggregate):
